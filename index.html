@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link type="stylesheet" href="https://fonts.google.com/specimen/Barlow+Semi+Condensed" >
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="container">
+  <main class="main-container">
+    <header class="header-container">
+      <div class="header-left">
+        <h4>ROCK</h4>
+        <h4>PAPER</h4>
+        <h4>SCISSORS</h4>
+      </div>
+      <div class="header-right">
+        <h6>score</h6>
+        <h1 id="score">12</h1>
+      </div>
+    </header>
+
+    <div class="game-inputs">
+      <div class="flex-decide">
+        <div class="border paper">
+          <div class="values choose-time">
+            <img src="./images/icon-paper.svg" alt="paper">
+          </div>
+        </div>
+      </div>
+      <div class="flex-decide">
+        <div class="border scissors">
+          <div class="values choose-time">
+            <img src="./images/icon-scissors.svg" alt="Scissors">
+          </div>
+        </div>
+      </div>
+      <div class="flex-decide">
+        <div class="border rock">
+          <div class="values choose-time">
+            <img src="./images/icon-rock.svg" alt="rock">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="choose-wrapper">
+      <div class="choose">
+        <h4 style="width: 200px;">You choose</h4>
+        <h4 style="width: 220px;">computer choose</h4>
+      </div>
+      <div class="choose">
+        <div class="left-choose">
+          <div class="flex-decide">
+            <div class="border scissors">
+              <div class="values choose-time">
+                <img src="./images/icon-scissors.svg" alt="Scissors">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <h1 class="win-lose">You Lose</h1>
+          <a class="replay">Play Again</a>
+        </div>
+        <div class="right-choose">
+          <div class="flex-decide">
+            <div class="border rock">
+              <div class="values choose-time">
+                <img src="./images/icon-rock.svg" alt="rock">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Isaiah</a>.
+  </div>
+</body>
+</html>
