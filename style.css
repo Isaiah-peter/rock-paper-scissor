@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
 * {
+    font-family: "Barlow Semi Condensed", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -159,4 +162,6 @@
     text-transform: uppercase;
 }
 
-
+.black {
+    background-color: #333232 !important;
+}

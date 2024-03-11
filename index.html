@@ -41,23 +41,23 @@
       </div>
     </header>
 
-    <div class="game-inputs">
+    <div class="game-inputs" id="home">
       <div class="flex-decide">
-        <div class="border paper">
+        <div class="border paper" onclick="select_choose('paper')">
           <div class="values choose-time">
             <img src="./images/icon-paper.svg" alt="paper">
           </div>
         </div>
       </div>
       <div class="flex-decide">
-        <div class="border scissors">
+        <div class="border scissors" onclick="select_choose('scissors')">
           <div class="values choose-time">
             <img src="./images/icon-scissors.svg" alt="Scissors">
           </div>
         </div>
       </div>
       <div class="flex-decide">
-        <div class="border rock">
+        <div class="border rock" onclick="select_choose('rock')">
           <div class="values choose-time">
             <img src="./images/icon-rock.svg" alt="rock">
           </div>
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <!-- <div class="choose-wrapper">
+    <div class="choose-wrapper" id="choose_page">
       <div class="choose">
         <h4 style="width: 200px;">You choose</h4>
         <h4 style="width: 220px;">computer choose</h4>
@@ -73,32 +73,34 @@
       <div class="choose">
         <div class="left-choose">
           <div class="flex-decide">
-            <div class="border scissors">
+            <div class="border scissors" id="user-choose">
               <div class="values choose-time">
-                <img src="./images/icon-scissors.svg" alt="Scissors">
+                <img src="./images/icon-scissors.svg" alt="Scissors" id="user-choose-img">
               </div>
             </div>
           </div>
         </div>
         <div class="center">
-          <h1 class="win-lose">You Lose</h1>
-          <a class="replay">Play Again</a>
+          <h1 class="win-lose" id="win-lost">You Lose</h1>
+          <a class="replay" onclick="play_again()">Play Again</a>
         </div>
         <div class="right-choose">
           <div class="flex-decide">
-            <div class="border rock">
+            <div class="border rock" id="computer-choose">
               <div class="values choose-time">
-                <img src="./images/icon-rock.svg" alt="rock">
+                <img src="./images/icon-rock.svg" alt="rock" id="computer-choose-img">
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Isaiah</a>.
   </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>
