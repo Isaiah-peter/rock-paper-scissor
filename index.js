@@ -6,12 +6,16 @@ let user_choose_img = document.getElementById("user-choose-img")
 let computer_choose_img = document.getElementById("computer-choose-img")
 let score = document.getElementById("score")
 let win_lost = document.getElementById("win-lost")
+let centers = document.getElementById("centers")
 
+    
 let random_item = ["rock", "paper", "scissors"]
 
 score.innerHTML = "0"
 
 choose_page.style.display = "none"
+centers.style.display = "none"
+computer_choose.style.display = "none"
 
 const play_again = () => {  
     home_page.style.display = "flex"
@@ -25,9 +29,19 @@ const select_choose = (choose) => {
     let computer = computerchoose()
 
     select_choose_design(user_choose, choose, user_choose_img)
-    select_choose_design(computer_choose, computer, computer_choose_img) 
-    console.log(choose, computer)
-    game_rule(computer, choose)
+    setTimeout(() => {
+        select_choose_design(computer_choose, computer, computer_choose_img)
+        computer_choose.style.display = "flex"
+    }, 1000)
+
+    setTimeout(() => {
+        game_rule(computer, choose)
+        centers.style.display ="flex"
+    }, 1000)
+
+    centers.style.display = "none"
+    computer_choose.style.display = "none"
+    
 }
 
 const game_rule = (computer, user) => {

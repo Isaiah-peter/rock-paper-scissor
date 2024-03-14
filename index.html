@@ -67,11 +67,8 @@
 
     <div class="choose-wrapper" id="choose_page">
       <div class="choose">
-        <h4 style="width: 200px;">You choose</h4>
-        <h4 style="width: 220px;">computer choose</h4>
-      </div>
-      <div class="choose">
         <div class="left-choose">
+          <h4>You choose</h4>
           <div class="flex-decide">
             <div class="border scissors" id="user-choose">
               <div class="values choose-time">
@@ -80,11 +77,12 @@
             </div>
           </div>
         </div>
-        <div class="center">
+        <div class="center" id="centers">
           <h1 class="win-lose" id="win-lost">You Lose</h1>
           <a class="replay" onclick="play_again()">Play Again</a>
         </div>
         <div class="right-choose">
+          <h4>computer choose</h4>
           <div class="flex-decide">
             <div class="border rock" id="computer-choose">
               <div class="values choose-time">
