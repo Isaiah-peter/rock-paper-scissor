@@ -166,6 +166,27 @@
     background-color: #333232 !important;
 }
 
+.reaction {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: jump 1s;
+}
+
+@keyframes jump {
+
+    0% {
+        width: 25px;
+        height: 25px;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
 @media screen and (max-width: 400px){
 
     .main-container {

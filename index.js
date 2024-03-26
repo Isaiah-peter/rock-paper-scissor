@@ -7,6 +7,7 @@ let computer_choose_img = document.getElementById("computer-choose-img")
 let score = document.getElementById("score")
 let win_lost = document.getElementById("win-lost")
 let centers = document.getElementById("centers")
+let reaction = document.getElementById("reaction")
 
     
 let random_item = ["rock", "paper", "scissors"]
@@ -49,34 +50,43 @@ const game_rule = (computer, user) => {
     {
         if (user == "paper") {
             win_lost.innerHTML = "YOU LOSE"
+            reaction.src = "./images/sad-icon.svg"
         } else if (user == "rock") {
             win_lost.innerHTML = "YOU WIN"
+            reaction.src = "./images/smiley-icon.svg"
             let result = Number(score.innerHTML) + 1
             score.innerHTML = result.toString()
         } else {
             win_lost.innerHTML = "YOU TIE"
+            reaction.src = "./images/confused-color-icon.svg"
         }
     }else if (computer == "paper")
     {
         if (user == "rock") {
             win_lost.innerHTML = "YOU LOSE"
+            reaction.src = "./images/sad-icon.svg"
         } else if (user == "scissors") {
             win_lost.innerHTML = "YOU WIN"
+            reaction.src = "./images/smiley-icon.svg"
             let result = Number(score.innerHTML) + 1
             score.innerHTML = result.toString()
         } else {
             win_lost.innerHTML = "YOU TIE"
+            reaction.src = "./images/confused-color-icon.svg"
         }
     } else if (computer == "rock")
     {
         if (user == "scissors") {
             win_lost.innerHTML = "YOU LOSE"
+            reaction.src = "./images/sad-icon.svg"
         } else if (user == "paper") {
             win_lost.innerHTML = "YOU WIN"
+            reaction.src = "./images/smiley-icon.svg"
             let result = Number(score.innerHTML) + 1
             score.innerHTML = result.toString()
         } else {
             win_lost.innerHTML = "YOU TIE"
+            reaction.src = "./images/confused-color-icon.svg"
         }
     }
 }
